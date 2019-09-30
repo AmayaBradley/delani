@@ -1,9 +1,334 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Delani studio</title>
+	<title>DelaniStudios</title>
 </head>
+<link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
+<style type="text/css">
+	* {
+  box-sizing: border-box;
+  text-align: center;
+}
+	body{
+		font-family: 'Open Sans Condensed';
+	}
+	
+
+	.main{
+		max-width: 1000px;
+		margin:auto;
+		background-image: cover;
+		z-index: -400px;
+	}
+	.header{
+		position:relative;
+		text-align: center;
+
+	}
+	.header_centered {
+
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+
+}
+.mouse {
+
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.about{
+	text-align: center;
+}
+.services{
+		position:relative;
+		text-align: center;
+
+
+}
+.service_centered{
+	
+  position: absolute;
+  top:50%;
+  
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  color: Whitesmoke;
+
+
+
+}
+.wedo{
+	align-content: center;
+}
+.column{
+	float: left;
+	
+	padding: 5px;
+	width: 33%;
+
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column_p{
+	float: left;
+	width: 25%;
+	padding: 5px;
+}
+
+	.contact{
+		position:relative;
+		text-align: center;
+		background-color: rgb(0, 0, 0, 0);
+
+	}
+	.form{
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+
+}
+input[type=text], select {
+	float:left;
+	width: 45%;
+	margin-right: 30px;
+
+	background-color: rgba(0, 0, 0, 0);
+	margin-bottom: 10px;
+	
+	
+}
+input[type=email], select {
+	float: left;
+	width: 45%;
+	background-color: rgba(0, 0, 0, 0);
+	margin-bottom: 10px;
+	margin-right: 30px;
+	
+
+}
+textarea{
+	background-color:  rgba(0, 0, 0, 0);
+	
+}
+.social{
+	width: 1000px;
+	margin-left: 230px;
+}
+.icon{
+	width: 6%;
+	float: left;
+}
+
+
+
+
+
+@media screen and (max-width: 600px){
+	.header_centered{
+	 width:100%;
+	}
+	.about{
+		width: 100%;
+	}
+	.services{
+		width: 100%;
+		
+	}
+	.column{
+		width: 33%;
+	}
+	.column_p{
+		width: 100%;
+	}
+	.social{
+		width: 100%;
+	}
+	.contact{
+		width: 100%;
+	}
+
+
+}
+
+
+
+	
+
+</style>
 <body>
-<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/6f2dff54e348df43a16a4abd3/1c626e369dbcf1795b714dfc8.js");</script>
+	<div class="main">
+		<div class="header">
+			<img src="backgrounds/h_img.jpg" style="width:100%">
+			<div class="header_centered">
+				<br><img src="logo/logo.png"></br>
+				<h1 style="color: Whitesmoke">WELCOME TO DELANI STUDIOS</h1>
+				<h1 style="color: Whitesmoke">AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN ENVIRONMENT</h1>	
+				<div class="mouse">
+
+
+				<br><img src="mouse_click.png"></div>
+				</div>						
+			
+		</div>
+		<div class="about"><p><h4>ABOUT US</h4></p><p>When you work with us, you are part of the team of committed collaborators.All aspects of our software development process are integrated, interactive </p><p>and agile.</p><p>Our approachunifies design, development and product management to create exceptional products.</p>We start each project by understanding your business goals, the user's needs and the product requirements.<p>Then we help translate them into effective and elegant solutions. 
+		</p>
+	</div>
+	<div class="services">
+		<img src="backgrounds/s_image.jpg" style="width: 100%">
+		<div class="service_centered">
+			<p>Services</p>
+		<p>Before we design a contract or write a line of code our team will spend the necessary time needed to understand your product vision.</p>
+		<p>The outcome of this scoping session is ia proposal or high-level statement of work</p>
+		<p>based on your requirements, we can provide a complete offering or just the pieces you need</p>
+		</div>
+
+	</div>
+	<div class="wedo">
+		<div class="row">
+			<div class="column">
+				<div class="toggle1">
+				<img src="services_icons/design_icon.png" style="width: 50%">
+				<p>Design</p>
+			</div>
+			<div id="design" style="display: none">
+				Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing.
+Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed.
+
+			</div>
+			</div>
+			<div class="column">
+				<div class="toggle2">
+				<img src="services_icons/dev_icon.png" style="width: 50%">
+				<p>Development</p>
+			</div>
+			<div id="development" style="display: none">
+				All engineers are fluent in the latest enterprise, mobile and web development technologies.
+They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.
+
+			</div>
+	</div>
+	<div class="column">
+		<div class="toggle3">
+		<img src="services_icons/product_icon.png" style="width: 50%">
+		<p>Product Management</p>
+	</div>
+	<div id="management" style="display: none">
+		Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. 
+This iterative process allows for changes as business requirements evolve.
+
+	</div>
+</div>
+
+
+	<P>PORTFOLIO</P>
+	<div class="row_p">
+		<div class="column_p">
+			<img src="portfolio/work1.jpg" style="width:100%">
+		</div>
+				<div class="column_p">
+			<img src="portfolio/work2.jpg" style="width:100%">
+		</div>
+		<div class="column_p">
+			<img src="portfolio/work3.jpg" style="width:100%">
+		</div>
+		<div class="column_p">
+			<img src="portfolio/work4.jpg" style="width:100%">
+		</div>
+		<div class="column_p">
+			<img src="portfolio/work5.jpg" style="width:100%">
+		</div>
+		<div class="column_p">
+			<img src="portfolio/work6.jpg" style="width:100%">
+		</div>
+		<div class="column_p">
+			<img src="portfolio/work7.jpg" style="width:100%">
+		</div>
+		<div class="column_p">
+			<img src="portfolio/work8.jpg" style="width:100%">
+		</div>
+	</div>
+	
+	<div class="contact">
+		<div class="form_img">
+			<img src="backgrounds/c_image.jpg" style="width:100%">
+			<div class="form">
+		<p>CONTACT US</p>
+		<input type="text" name="name" value="name">
+		<input type="email" name="email" value="email">
+		<br>
+		<textarea name="message" rows="10" cols="85">Your Message Here......</textarea>
+</div>
+</div>
+	</div>
+
+<footer>
+	<div class="social">
+		<div class="icon">
+			<img src="social_icons/behance.png">
+		</div>
+				<div class="icon">
+					<img src="social_icons/dribble.png">
+		</div>
+		<div class="icon">
+			<img src="social_icons/facebook.png">
+
+		</div>
+		<div class="icon">
+			<img src="social_icons/flickr.png">
+		</div>
+		<div class="icon">
+			<img src="social_icons/g_plus.png">
+		</div>
+		<div class="icon">
+			<img src="social_icons/pinterest.png">
+		</div>
+		<div class="icon">
+			<img src="social_icons/skype.png">
+		</div>
+		<div class="icon">
+			<img src="social_icons/stumble_upon.png">
+		</div>
+		<div class="icon">
+			<img src="social_icons/twitter.png">
+		</div>
+
+	</div>
+
+	
+
+</div>
+
+<br>DELANI STUDIO</br>
+	<br>2019</br>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+  $(".toggle1").click(function(){
+    $("#design").toggle();
+  });
+      $(".toggle2").click(function(){
+    	$("#development").toggle();
+    });
+            $(".toggle3").click(function(){
+    	$("#management").toggle();
+    });
+
+
+})
+	</script>
 </body>
 </html>
