@@ -4,9 +4,7 @@
 }
 	body{
 		font-family: 'Open Sans Condensed';
-	}
-	
-
+	}	
 	.main{
 		max-width: 100%;
 		margin:auto;
@@ -19,22 +17,17 @@
 
 	}
 	.header_centered {
-
-
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 15px;
-
 }
 .mouse {
-
   position: absolute;
   top: 400px;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 .about{
 	text-align: center;
@@ -42,21 +35,14 @@
 .services{
 		position:relative;
 		text-align: center;
-
-
 }
-.service_centered{
-	
+.service_centered{	
   position: absolute;
-  top:50%;
-  
+  top:50%;  
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 15px;
   color: Whitesmoke;
-
-
-
 }
 .wedo{
 	align-content: center;
@@ -66,7 +52,6 @@
 	
 	padding: 5px;
 	width: 33%;
-
 }
 .row::after {
   content: "";
@@ -78,7 +63,6 @@
 	width: 25%;
 	padding: 5px;
 }
-
 	.contact{
 		position:relative;
 		text-align: center;
@@ -100,22 +84,17 @@ input[type=text], select {
 	margin-right: 30px;
 
 	background-color: rgba(0, 0, 0, 0);
-	margin-bottom: 10px;
-	
-	
+	margin-bottom: 10px;	
 }
 input[type=email], select {
 	float: left;
 	width: 45%;
 	background-color: rgba(0, 0, 0, 0);
 	margin-bottom: 10px;
-	margin-right: 30px;
-	
-
+	margin-right: 30px;	
 }
 textarea{
-	background-color:  rgba(0, 0, 0, 0);
-	
+	background-color:  rgba(0, 0, 0, 0);	
 }
 .social{
 	width: 1000px;
@@ -126,11 +105,8 @@ textarea{
 	float: left;
 }
 .image {
-  display: block;
-  
-  
+  display: block; 
 }
-
 .hover_effect {
   position: absolute;
   top: 0;
@@ -140,15 +116,12 @@ textarea{
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
-  
-  
+  transition: .5s ease;   
 }
 
 .column_p:hover .hover_effect {
   opacity: 0;
 }
-
 .text {
   color: black;
   font-size: 20px;
@@ -173,9 +146,6 @@ textarea{
   cursor: pointer;
 }
 
-
-
-
 @media screen and (max-width: 600px){
 	.header_centered{
 	 width:100%;
@@ -199,6 +169,5 @@ textarea{
 	.contact{
 		width: 100%;
 	}
-
 
 }
